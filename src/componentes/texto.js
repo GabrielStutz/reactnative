@@ -3,7 +3,7 @@ import { StyleSheet, Text } from 'react-native';
 
 export default function Texto({ children, style }) {
     let estilo = estilos.texto;
-    if(style?.fontWeight == 'bold') {
+    if(style?.fontWeight === 'bold') {
         estilo = estilos.textoNegrito;
     }
     return <Text style={[style, estilo]}> { children }</Text>
@@ -11,12 +11,12 @@ export default function Texto({ children, style }) {
 
 const estilos = StyleSheet.create({
     texto: {
-        fontFamily: "MontserrratRegular",
+        fontFamily: "MontserratRegular",
         fontWeight: "normal"
     },
     textoNegrito: {
         fontFamily: "MontserratBold",
-        fontWeight: "normal"
+        fontWeight: "normal",
     }
 });
 
