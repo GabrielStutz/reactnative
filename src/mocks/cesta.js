@@ -1,4 +1,8 @@
 import logo from "../../assets/logo.png";
+import abobora from "../../assets/frutas/Abóbora.png";
+import batata from "../../assets/frutas/Batata.png";
+import brocolis from "../../assets/frutas/Brócolis.png";
+import pepino from "../../assets/frutas/Pepino.png";
 import tomate from "../../assets/frutas/Tomate.png";
 
 const cesta = {
@@ -15,10 +19,28 @@ const cesta = {
     },
     itens: {
         titulo: "Itens da Sexta",
-        lista: [{
-            nome: "Tomate",
-
-        }],
+        lista: [
+            {
+                nome: "Abóbora",
+                imagem: abobora,
+            },
+            {
+                nome: "Batata",
+                imagem: batata,
+            },
+            {
+                nome: "Brócolis",
+                imagem: brocolis,
+            },
+            {
+                nome: "Pepino",
+                imagem: pepino,
+            },
+            {
+                nome: "Tomate",
+                imagem: tomate,
+            },
+        ],
     }
 }
 
