@@ -15,7 +15,7 @@ if(!fontCarregada) {
   return <AppLoading />
 }
   return (
-    <SafeAreaView>
+    <SafeAreaView Style={{flex: 1}}>
       <StatusBar />
       <Cesta {...mock}/>
     </SafeAreaView>
