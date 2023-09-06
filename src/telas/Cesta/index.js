@@ -4,6 +4,7 @@ import { FlatList, StyleSheet, View} from "react-native";
 import Topo from "./componentes/topo";
 import Detalhes from "./componentes/Detalhes";
 import Item from "./componentes/item";
+import Texto from "../../componentes/texto";
 
 export default function Cesta({ topo, detalhes, itens }) {
     return <>
@@ -16,6 +17,7 @@ export default function Cesta({ topo, detalhes, itens }) {
                     <Topo {...topo} />
                     <View style={estilos.cesta}>
                         <Detalhes {...detalhes}/>
+                        <Texto style={estilos.titulo}>{itens.titulo}</Texto>
                     </View>
                 </>
             }}
@@ -36,4 +38,5 @@ const estilos = StyleSheet.create({
         paddingVertical: 8,
         paddingHorizontal: 16,
     },
+
 });

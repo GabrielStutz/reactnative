@@ -7,17 +7,17 @@ import Cesta from './src/telas/Cesta';
 import mock from './src/mocks/cesta';
 
 export default function App() {
-  const [fontCarregada] = useFonts({
+  const [fonteCarregada] = useFonts({
     "MontserratRegular": Montserrat_400Regular,
     "MontserratBold": Montserrat_700Bold,
   });
-if(!fontCarregada) {
-  return <AppLoading />
-}
-  return (
-    <SafeAreaView Style={{flex: 1}}>
-      <StatusBar />
-      <Cesta {...mock}/>
-    </SafeAreaView>
-  );
+  if(!fonteCarregada) {
+    return <AppLoading />
+  }
+    return (
+      <SafeAreaView style={{flex: 1}}>
+        <StatusBar />
+        <Cesta {...mock}/>
+      </SafeAreaView>
+    );
 }

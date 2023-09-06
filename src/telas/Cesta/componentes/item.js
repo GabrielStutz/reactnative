@@ -16,6 +16,7 @@ const estilos = StyleSheet.create({
         borderBottomWidth: 1,
         borderBottomColor: "#ececec",
         paddingVertical: 16,
+        marginHorizontal: 16,
         alignItems: "center",
     },
     imagem: {
